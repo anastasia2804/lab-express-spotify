@@ -1,0 +1,13 @@
+<link rel="stylesheet" href="styles/style.css"/>
+
+<div class="page-container">
+{{#each myArtistsArray}}
+<div class = "container">
+<img class="img-card" src="{{this.images.0.url}}"/>
+<div class = "title">
+<h2>{{this.name}}</h2>
+<a class="button" href="/albums/{{this.id}}">View Albums</a>
+</div>
+</div>
+{{/each}}
+</div>
